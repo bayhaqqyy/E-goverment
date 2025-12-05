@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Reni Yuniarti Putri\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Reni Yuniarti Putri\\.nuget\\packages"
+      "C:\\Users\\Bintang Triadmaja\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Bintang Triadmaja\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,

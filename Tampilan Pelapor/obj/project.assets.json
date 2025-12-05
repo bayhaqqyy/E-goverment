@@ -8,19 +8,19 @@
     "net9.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Reni Yuniarti Putri\\.nuget\\packages\\": {}
+    "C:\\Users\\Bintang Triadmaja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Reni Yuniarti Putri\\OneDrive\\Desktop\\E-goverment\\Tampilan Pelapor\\Tampilan Pelapor.csproj",
+      "projectUniqueName": "D:\\code\\dotnet\\kuliah\\uts\\E-goverment\\Tampilan Pelapor\\Tampilan Pelapor.csproj",
       "projectName": "Tampilan Pelapor",
-      "projectPath": "C:\\Users\\Reni Yuniarti Putri\\OneDrive\\Desktop\\E-goverment\\Tampilan Pelapor\\Tampilan Pelapor.csproj",
-      "packagesPath": "C:\\Users\\Reni Yuniarti Putri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Reni Yuniarti Putri\\OneDrive\\Desktop\\E-goverment\\Tampilan Pelapor\\obj\\",
+      "projectPath": "D:\\code\\dotnet\\kuliah\\uts\\E-goverment\\Tampilan Pelapor\\Tampilan Pelapor.csproj",
+      "packagesPath": "C:\\Users\\Bintang Triadmaja\\.nuget\\packages\\",
+      "outputPath": "D:\\code\\dotnet\\kuliah\\uts\\E-goverment\\Tampilan Pelapor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Reni Yuniarti Putri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bintang Triadmaja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

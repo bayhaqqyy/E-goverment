@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tampilan Pelapor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38939a57e496699d4c404df8cbbead2e7df1aab2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66f04c7eded3ba8c1a350de57a0b92963927786b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tampilan Pelapor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tampilan Pelapor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

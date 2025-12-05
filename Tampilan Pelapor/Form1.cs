@@ -68,20 +68,36 @@ namespace Tampilan_Pelapor
 
         private void buttonKirim_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textNama.Text) || 
-                string.IsNullOrWhiteSpace(textJudul.Text))
+            if (string.IsNullOrWhiteSpace(textNama.Text) ||
+                string.IsNullOrWhiteSpace(textJudul.Text) ||
+                string.IsNullOrWhiteSpace(textNik.Text))
             {
-                MessageBox.Show("Nama dan Judul wajib diisi.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("NIK, Nama, dan Judul wajib diisi.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            // Tambah ke daftar (mock)
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(textNik.Text, "^[0-9]+$"))
+            {
+                MessageBox.Show("NIK hanya boleh berisi angka (0-9).", "Format Salah", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+ 
+            if (textNik.Text.Length != 16)
+            {
+                MessageBox.Show("NIK harus berjumlah 16 digit.", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             int idx = listDaftar.Items.Count + 1;
             var item = new ListViewItem(new[] {
                 idx.ToString(),
+                textNik.Text,
                 dateTimePicker1.Value.ToShortDateString(),
                 comboKategori.Text,
                 textJudul.Text
             });
+
             listDaftar.Items.Add(item);
             MessageBox.Show("Pengaduan ditambahkan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
             buttonReset.PerformClick();
@@ -126,6 +142,11 @@ namespace Tampilan_Pelapor
         private void pengaduanToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Anda membuka menu Bantuan");
+        }
+
+        private void textNik_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
