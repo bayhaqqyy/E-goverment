@@ -1,0 +1,17 @@
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\bin\Debug\net9.0-windows\Tampilan Pelapor.exe
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\bin\Debug\net9.0-windows\Tampilan Pelapor.deps.json
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\bin\Debug\net9.0-windows\Tampilan Pelapor.runtimeconfig.json
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\bin\Debug\net9.0-windows\Tampilan Pelapor.dll
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\bin\Debug\net9.0-windows\Tampilan Pelapor.pdb
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan_Pelapor.Form1.resources
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.csproj.GenerateResource.cache
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.AssemblyInfoInputs.cache
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.AssemblyInfo.cs
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.csproj.CoreCompileInputs.cache
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.sourcelink.json
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.dll
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\refint\Tampilan Pelapor.dll
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.pdb
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\Tampilan Pelapor.genruntimeconfig.cache
+C:\Users\Reni Yuniarti Putri\OneDrive\Desktop\E-goverment\Tampilan Pelapor\obj\Debug\net9.0-windows\ref\Tampilan Pelapor.dll
