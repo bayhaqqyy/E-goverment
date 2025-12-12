@@ -53,7 +53,9 @@
             labelNik = new Label();
             labelNama = new Label();
             groupDetail = new GroupBox();
-            textDetail = new TextBox();
+            pictureBoxDetailFoto = new PictureBox();
+            detailFotoAduanLabel = new Label();
+            rtbDetail = new RichTextBox();
             groupDaftar = new GroupBox();
             listDaftar = new ListView();
             columnNO = new ColumnHeader();
@@ -64,6 +66,7 @@
             groupForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFoto).BeginInit();
             groupDetail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDetailFoto).BeginInit();
             groupDaftar.SuspendLayout();
             SuspendLayout();
             // 
@@ -132,7 +135,7 @@
             groupForm.Margin = new Padding(2);
             groupForm.Name = "groupForm";
             groupForm.Padding = new Padding(2);
-            groupForm.Size = new Size(406, 469);
+            groupForm.Size = new Size(406, 571);
             groupForm.TabIndex = 0;
             groupForm.TabStop = false;
             groupForm.Text = "Buat Pengaduan";
@@ -324,24 +327,49 @@
             // 
             // groupDetail
             // 
-            groupDetail.Controls.Add(textDetail);
+            groupDetail.Controls.Add(pictureBoxDetailFoto);
+            groupDetail.Controls.Add(detailFotoAduanLabel);
+            groupDetail.Controls.Add(rtbDetail);
             groupDetail.Location = new Point(433, 304);
             groupDetail.Margin = new Padding(2);
             groupDetail.Name = "groupDetail";
             groupDetail.Padding = new Padding(2);
-            groupDetail.Size = new Size(500, 229);
+            groupDetail.Size = new Size(500, 331);
             groupDetail.TabIndex = 13;
             groupDetail.TabStop = false;
             groupDetail.Text = "Detail Pengaduan";
             // 
-            // textDetail
+            // pictureBoxDetailFoto
             // 
-            textDetail.Location = new Point(10, 26);
-            textDetail.Margin = new Padding(2);
-            textDetail.Multiline = true;
-            textDetail.Name = "textDetail";
-            textDetail.Size = new Size(478, 199);
-            textDetail.TabIndex = 0;
+            pictureBoxDetailFoto.BackColor = SystemColors.ButtonHighlight;
+            pictureBoxDetailFoto.BorderStyle = BorderStyle.FixedSingle;
+            pictureBoxDetailFoto.Location = new Point(100, 231);
+            pictureBoxDetailFoto.Margin = new Padding(2);
+            pictureBoxDetailFoto.Name = "pictureBoxDetailFoto";
+            pictureBoxDetailFoto.Size = new Size(128, 92);
+            pictureBoxDetailFoto.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxDetailFoto.TabIndex = 18;
+            pictureBoxDetailFoto.TabStop = false;
+            pictureBoxDetailFoto.Click += pictureBoxDetailFoto_Click;
+            // 
+            // detailFotoAduanLabel
+            // 
+            detailFotoAduanLabel.AutoSize = true;
+            detailFotoAduanLabel.Location = new Point(10, 231);
+            detailFotoAduanLabel.Margin = new Padding(2, 0, 2, 0);
+            detailFotoAduanLabel.Name = "detailFotoAduanLabel";
+            detailFotoAduanLabel.Size = new Size(86, 20);
+            detailFotoAduanLabel.TabIndex = 18;
+            detailFotoAduanLabel.Text = "Foto Aduan";
+            detailFotoAduanLabel.Click += label1_Click_1;
+            // 
+            // rtbDetail
+            // 
+            rtbDetail.Location = new Point(10, 25);
+            rtbDetail.Name = "rtbDetail";
+            rtbDetail.Size = new Size(478, 200);
+            rtbDetail.TabIndex = 0;
+            rtbDetail.Text = "";
             // 
             // groupDaftar
             // 
@@ -395,7 +423,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(942, 555);
+            ClientSize = new Size(942, 646);
             Controls.Add(groupDaftar);
             Controls.Add(groupDetail);
             Controls.Add(groupForm);
@@ -413,6 +441,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBoxFoto).EndInit();
             groupDetail.ResumeLayout(false);
             groupDetail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDetailFoto).EndInit();
             groupDaftar.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -444,12 +473,14 @@
         private Button buttonReset;
         private Button buttonKirim;
         private GroupBox groupDetail;
-        private TextBox textDetail;
         private GroupBox groupDaftar;
         private ListView listDaftar;
         private ColumnHeader columnNO;
         private ColumnHeader columnTanggal;
         private ColumnHeader columnKategori;
         private ColumnHeader columnJudul;
+        private RichTextBox rtbDetail;
+        private Label detailFotoAduanLabel;
+        private PictureBox pictureBoxDetailFoto;
     }
 }
