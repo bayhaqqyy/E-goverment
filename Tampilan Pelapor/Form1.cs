@@ -136,12 +136,18 @@ namespace Tampilan_Pelapor
 
         private void tentangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Anda membuka menu Tentang");
+            MessageBox.Show("Aplikasi ini disusun oleh: \n\n" +
+                "BINTANG TRIADMAJA\n" +
+                "NEVADA PRIDHO\n" +
+                "RENI YUNIARTI PUTRI\n" +
+                "RAFLI ABDUL BAY HAQQY\n" +
+                "PRIMUANDY LEOKOY");
         }
 
         private void pengaduanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Anda membuka menu Bantuan");
+            MessageBox.Show("Hubungi Helpdesk:\n" +
+                "+62 81234567890");
         }
 
         private void textNik_TextChanged(object sender, EventArgs e)
