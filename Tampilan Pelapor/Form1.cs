@@ -55,7 +55,7 @@ namespace Tampilan_Pelapor
 
         private void listDaftar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            RichTextBox rtbDetailPengaduan = this.rtbDetail; // Ganti dengan nama kontrol kamu
+            RichTextBox rtbDetailPengaduan = this.rtbDetail;
 
             if (listDaftar.SelectedItems.Count > 0)
             {
@@ -82,24 +82,20 @@ namespace Tampilan_Pelapor
 
                 string imagePath = selectedItem.Tag as string;
 
-                // 2. Muat gambar ke PictureBox Detail
                 if (!string.IsNullOrEmpty(imagePath) && System.IO.File.Exists(imagePath))
                 {
                     try
                     {
-                        // Gunakan FromFile untuk memuat gambar
                         pictureBoxDetailFoto.Image = Image.FromFile(imagePath);
                     }
                     catch (Exception ex)
                     {
-                        // Tangani error jika file tidak bisa dimuat
                         MessageBox.Show($"Gagal memuat gambar: {ex.Message}");
                         pictureBoxDetailFoto.Image = null;
                     }
                 }
                 else
                 {
-                    // Jika tidak ada path atau file tidak ditemukan
                     pictureBoxDetailFoto.Image = null;
                 }
 
