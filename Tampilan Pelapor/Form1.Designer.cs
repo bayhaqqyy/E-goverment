@@ -34,6 +34,7 @@
             tentangToolStripMenuItem = new ToolStripMenuItem();
             pengaduanToolStripMenuItem = new ToolStripMenuItem();
             groupForm = new GroupBox();
+            genderLabel = new Label();
             buttonReset = new Button();
             buttonKirim = new Button();
             pictureBoxFoto = new PictureBox();
@@ -63,6 +64,8 @@
             columnTanggal = new ColumnHeader();
             columnKategori = new ColumnHeader();
             columnJudul = new ColumnHeader();
+            maleRadioButton = new RadioButton();
+            femaleRadioButton = new RadioButton();
             menuStrip1.SuspendLayout();
             groupForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFoto).BeginInit();
@@ -113,6 +116,9 @@
             // 
             // groupForm
             // 
+            groupForm.Controls.Add(femaleRadioButton);
+            groupForm.Controls.Add(maleRadioButton);
+            groupForm.Controls.Add(genderLabel);
             groupForm.Controls.Add(buttonReset);
             groupForm.Controls.Add(buttonKirim);
             groupForm.Controls.Add(pictureBoxFoto);
@@ -141,10 +147,21 @@
             groupForm.TabStop = false;
             groupForm.Text = "Buat Pengaduan";
             // 
+            // genderLabel
+            // 
+            genderLabel.AutoSize = true;
+            genderLabel.Location = new Point(19, 67);
+            genderLabel.Margin = new Padding(2, 0, 2, 0);
+            genderLabel.Name = "genderLabel";
+            genderLabel.Size = new Size(66, 23);
+            genderLabel.TabIndex = 18;
+            genderLabel.Text = "Gender";
+            genderLabel.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // buttonReset
             // 
             buttonReset.BackColor = Color.LightGray;
-            buttonReset.Location = new Point(130, 429);
+            buttonReset.Location = new Point(130, 462);
             buttonReset.Margin = new Padding(2);
             buttonReset.Name = "buttonReset";
             buttonReset.Size = new Size(90, 27);
@@ -156,7 +173,7 @@
             // buttonKirim
             // 
             buttonKirim.BackColor = Color.DodgerBlue;
-            buttonKirim.Location = new Point(19, 429);
+            buttonKirim.Location = new Point(19, 462);
             buttonKirim.Margin = new Padding(2);
             buttonKirim.Name = "buttonKirim";
             buttonKirim.Size = new Size(90, 27);
@@ -169,7 +186,7 @@
             // 
             pictureBoxFoto.BackColor = SystemColors.ButtonHighlight;
             pictureBoxFoto.BorderStyle = BorderStyle.FixedSingle;
-            pictureBoxFoto.Location = new Point(252, 361);
+            pictureBoxFoto.Location = new Point(252, 394);
             pictureBoxFoto.Margin = new Padding(2);
             pictureBoxFoto.Name = "pictureBoxFoto";
             pictureBoxFoto.Size = new Size(128, 92);
@@ -181,7 +198,7 @@
             // buttonFoto
             // 
             buttonFoto.BackColor = Color.LightGray;
-            buttonFoto.Location = new Point(108, 362);
+            buttonFoto.Location = new Point(108, 395);
             buttonFoto.Margin = new Padding(2);
             buttonFoto.Name = "buttonFoto";
             buttonFoto.Size = new Size(133, 27);
@@ -192,7 +209,7 @@
             // 
             // rtbDeskripsi
             // 
-            rtbDeskripsi.Location = new Point(108, 274);
+            rtbDeskripsi.Location = new Point(108, 307);
             rtbDeskripsi.Margin = new Padding(2);
             rtbDeskripsi.Name = "rtbDeskripsi";
             rtbDeskripsi.Size = new Size(273, 68);
@@ -201,7 +218,7 @@
             // 
             // textJudul
             // 
-            textJudul.Location = new Point(109, 233);
+            textJudul.Location = new Point(109, 266);
             textJudul.Margin = new Padding(2);
             textJudul.Name = "textJudul";
             textJudul.Size = new Size(272, 30);
@@ -209,7 +226,7 @@
             // 
             // textLokasi
             // 
-            textLokasi.Location = new Point(109, 193);
+            textLokasi.Location = new Point(109, 226);
             textLokasi.Margin = new Padding(2);
             textLokasi.Name = "textLokasi";
             textLokasi.Size = new Size(272, 30);
@@ -217,7 +234,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(109, 151);
+            dateTimePicker1.Location = new Point(109, 184);
             dateTimePicker1.Margin = new Padding(2);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(272, 30);
@@ -228,7 +245,7 @@
             comboKategori.DropDownStyle = ComboBoxStyle.DropDownList;
             comboKategori.FormattingEnabled = true;
             comboKategori.Items.AddRange(new object[] { "Kebersihan", "Ketertiban dan Keamanan", "Infrastruktur dan Fasilitas Umum", "Layanan Publik", "Lainnya" });
-            comboKategori.Location = new Point(109, 108);
+            comboKategori.Location = new Point(109, 141);
             comboKategori.Margin = new Padding(2);
             comboKategori.Name = "comboKategori";
             comboKategori.Size = new Size(272, 31);
@@ -236,7 +253,7 @@
             // 
             // textNik
             // 
-            textNik.Location = new Point(109, 66);
+            textNik.Location = new Point(109, 99);
             textNik.Margin = new Padding(2);
             textNik.Name = "textNik";
             textNik.Size = new Size(272, 30);
@@ -253,7 +270,7 @@
             // labelDeskripsi
             // 
             labelDeskripsi.AutoSize = true;
-            labelDeskripsi.Location = new Point(19, 274);
+            labelDeskripsi.Location = new Point(19, 307);
             labelDeskripsi.Margin = new Padding(2, 0, 2, 0);
             labelDeskripsi.Name = "labelDeskripsi";
             labelDeskripsi.Size = new Size(77, 23);
@@ -263,7 +280,7 @@
             // labelJudul
             // 
             labelJudul.AutoSize = true;
-            labelJudul.Location = new Point(19, 233);
+            labelJudul.Location = new Point(19, 266);
             labelJudul.Margin = new Padding(2, 0, 2, 0);
             labelJudul.Name = "labelJudul";
             labelJudul.Size = new Size(50, 23);
@@ -273,7 +290,7 @@
             // labelLokasi
             // 
             labelLokasi.AutoSize = true;
-            labelLokasi.Location = new Point(19, 193);
+            labelLokasi.Location = new Point(19, 226);
             labelLokasi.Margin = new Padding(2, 0, 2, 0);
             labelLokasi.Name = "labelLokasi";
             labelLokasi.Size = new Size(56, 23);
@@ -283,7 +300,7 @@
             // labelTanggal
             // 
             labelTanggal.AutoSize = true;
-            labelTanggal.Location = new Point(19, 151);
+            labelTanggal.Location = new Point(19, 184);
             labelTanggal.Margin = new Padding(2, 0, 2, 0);
             labelTanggal.Name = "labelTanggal";
             labelTanggal.Size = new Size(69, 23);
@@ -293,7 +310,7 @@
             // labelKategori
             // 
             labelKategori.AutoSize = true;
-            labelKategori.Location = new Point(19, 108);
+            labelKategori.Location = new Point(19, 141);
             labelKategori.Margin = new Padding(2, 0, 2, 0);
             labelKategori.Name = "labelKategori";
             labelKategori.Size = new Size(74, 23);
@@ -303,7 +320,7 @@
             // labelNik
             // 
             labelNik.AutoSize = true;
-            labelNik.Location = new Point(19, 66);
+            labelNik.Location = new Point(19, 99);
             labelNik.Margin = new Padding(2, 0, 2, 0);
             labelNik.Name = "labelNik";
             labelNik.Size = new Size(38, 23);
@@ -422,6 +439,28 @@
             columnJudul.TextAlign = HorizontalAlignment.Center;
             columnJudul.Width = 180;
             // 
+            // maleRadioButton
+            // 
+            maleRadioButton.AutoSize = true;
+            maleRadioButton.Location = new Point(108, 67);
+            maleRadioButton.Name = "maleRadioButton";
+            maleRadioButton.Size = new Size(92, 27);
+            maleRadioButton.TabIndex = 21;
+            maleRadioButton.TabStop = true;
+            maleRadioButton.Text = "Laki-laki";
+            maleRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // femaleRadioButton
+            // 
+            femaleRadioButton.AutoSize = true;
+            femaleRadioButton.Location = new Point(252, 67);
+            femaleRadioButton.Name = "femaleRadioButton";
+            femaleRadioButton.Size = new Size(118, 27);
+            femaleRadioButton.TabIndex = 22;
+            femaleRadioButton.TabStop = true;
+            femaleRadioButton.Text = "Perempuan";
+            femaleRadioButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -488,6 +527,8 @@
         private Label detailFotoAduanLabel;
         private PictureBox pictureBoxDetailFoto;
         private Label labelTotalAduan;
-
+        private Label genderLabel;
+        private RadioButton femaleRadioButton;
+        private RadioButton maleRadioButton;
     }
 }

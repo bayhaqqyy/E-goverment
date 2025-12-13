@@ -8,6 +8,27 @@ namespace Tampilan_Pelapor
         private int totalAduan = 0;
 
         public const string HELPDESK_PHONE_NUMBER = "+628123456789";
+        Gender selectedGender;
+
+        public enum Gender {
+            male,
+            female
+        }
+
+        public string GetGenderString(Gender gender)
+        {
+            switch (gender)
+            {
+                case Gender.male:
+                    return "Laki-laki";
+
+                case Gender.female:
+                    return "Perempuan";
+
+                default:
+                    return "Tidak Diketahui";
+            }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -42,11 +63,14 @@ namespace Tampilan_Pelapor
                 string lokasi = selectedItem.SubItems.Count > 6 ? selectedItem.SubItems[6].Text : "N/A";
                 string deskripsi = selectedItem.SubItems.Count > 7 ? selectedItem.SubItems[7].Text : "N/A";
 
+                string genderString = GetGenderString(selectedGender);
+
                 string detailText = $"--- DETAIL PENGADUAN ---\n" +
                                     $"No. Pengaduan: {no}\n" +
                                     $"Tanggal: {tanggal}\n" +
                                     $"Nama Pengadu: {nama}\n" +
                                     $"NIK: {nik}\n" +
+                                    $"Gender: {genderString}\n" +
                                     $"Kategori: {kategori}\n" +
                                     $"Judul: {judul}\n" +
                                     $"Deskripsi: {deskripsi}\n" +
@@ -109,7 +133,22 @@ namespace Tampilan_Pelapor
                 return;
             }
 
+            if(maleRadioButton.Checked)
+            {
+                selectedGender = Gender.male;
+            }
+            else if(femaleRadioButton.Checked)
+            {
+                selectedGender = Gender.female;
+            }
+            else
+            {
+                MessageBox.Show("Gender harus diisi!", "Validasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             int idx = listDaftar.Items.Count + 1;
+
             var item = new ListViewItem(new[] {
                 idx.ToString(),
                 dateTimePicker1.Value.ToShortDateString(),
