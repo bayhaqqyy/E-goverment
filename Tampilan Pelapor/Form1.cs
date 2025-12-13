@@ -58,7 +58,21 @@ namespace Tampilan_Pelapor
             textJudul.Clear();
             rtbDeskripsi.Clear();
             pictureBoxFoto.Image = null;
-            pictureBoxFoto.Tag = null;
+            MessageBox.Show("Reset semua data");
+
+        }
+
+        private void listDaftar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listDaftar.Columns.Add("No", 50);
+            listDaftar.Columns.Add("Tanggal", 100);
+            listDaftar.Columns.Add("Kategori", 120);
+            listDaftar.Columns.Add("Judul", 200);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void buttonKirim_Click(object sender, EventArgs e)
@@ -77,7 +91,8 @@ namespace Tampilan_Pelapor
                 return;
             }
 
-            if (textNik.Text.Length != PANJANG_NIK)
+ 
+            if (textNik.Text.Length != 16)
             {
                 MessageBox.Show("NIK harus 16 digit.");
                 return;
@@ -92,17 +107,9 @@ namespace Tampilan_Pelapor
             {
                 idx.ToString(),
                 dateTimePicker1.Value.ToShortDateString(),
-                kategori.ToString(),
-                textJudul.Text,
-                textNik.Text,
-                textNama.Text,
-                textLokasi.Text,
-                rtbDeskripsi.Text
+                comboKategori.Text,
+                textJudul.Text
             });
-
-
-            if (pictureBoxFoto.Tag != null)
-                item.Tag = pictureBoxFoto.Tag.ToString();
 
             listDaftar.Items.Add(item);
 
@@ -185,6 +192,16 @@ namespace Tampilan_Pelapor
         private void pengaduanToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Helpdesk: +62 81234567890");
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxDetailFoto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
