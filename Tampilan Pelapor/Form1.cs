@@ -11,36 +11,6 @@ namespace Tampilan_Pelapor
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textNama_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelLokasi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupForm_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonReset_Click(object sender, EventArgs e)
         {
             textNama.Clear();
@@ -178,11 +148,6 @@ namespace Tampilan_Pelapor
 
         }
 
-        private void comboKategori_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Anda membuka menu Home");
@@ -207,21 +172,6 @@ namespace Tampilan_Pelapor
         {
             MessageBox.Show("Hubungi Helpdesk:\n" +
                 "+62 81234567890");
-        }
-
-        private void textNik_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBoxDetailFoto_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
