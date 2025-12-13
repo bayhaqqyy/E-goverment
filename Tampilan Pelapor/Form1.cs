@@ -6,6 +6,8 @@ namespace Tampilan_Pelapor
     public partial class Form1 : Form
     {
         private int totalAduan = 0;
+
+        public const string HELPDESK_PHONE_NUMBER = "+628123456789";
         public Form1()
         {
             InitializeComponent();
@@ -171,7 +173,7 @@ namespace Tampilan_Pelapor
         private void pengaduanToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hubungi Helpdesk:\n" +
-                "+62 81234567890");
+                HELPDESK_PHONE_NUMBER);
         }
     }
 }
